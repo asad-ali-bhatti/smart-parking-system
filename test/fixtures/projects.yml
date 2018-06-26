@@ -2,14 +2,18 @@
 
 one:
   name: MyString
+  street: MyString
   city: MyString
-  zip_code: MyString
+  zip: MyString
   state: MyString
   country: MyString
+  coordinates: 
 
 two:
   name: MyString
+  street: MyString
   city: MyString
-  zip_code: MyString
+  zip: MyString
   state: MyString
   country: MyString
+  coordinates: 
