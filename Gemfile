@@ -48,3 +48,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # MQTT Ruby driver
 gem 'mqtt'
+
+# Mongo ID auditing gem
+gem 'mongoid-history'

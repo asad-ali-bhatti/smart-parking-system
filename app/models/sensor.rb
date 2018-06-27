@@ -6,4 +6,5 @@ class Sensor
 
   belongs_to :sensor_type
   belongs_to :project
+  has_many :violations
 end
