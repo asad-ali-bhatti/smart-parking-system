@@ -1,7 +1,2 @@
-class ApplicationController < ActionController::API
-  before_action :render_json
-
-  def render_json
-    request.format = :json
-  end
+class ApplicationController < ActionController::Base
 end
