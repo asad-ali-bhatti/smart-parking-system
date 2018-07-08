@@ -1,0 +1,25 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+$(window).load ->
+#  console.log "<%= @markers.inspect%>"
+  handler = Gmaps.build('Google')
+  handler.buildMap {
+    provider: {zoom: 20, mapTypeId: google.maps.MapTypeId.SATELLITE}
+    internal:
+      id: 'map'
+  }, ->
+    handler.map.centerOn({ lat: 51.501185, lng: 6.545930 })
+    console.log window.markers[0]
+    
+    markers = handler.addMarkers(window.markers)
+
+    return
+  window.handler = handler
+#  map = new GMaps
+#              el: '#map'
+#              lat: 51.500976
+#              lng: 6.546112
+#              zoom: 18
+#  map.addMarkers window.markers
+
