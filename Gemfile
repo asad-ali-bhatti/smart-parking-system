@@ -69,6 +69,8 @@ group :development do
   gem 'capistrano-bundler', require: false
   # gem 'capistrano3-puma',   require: false
   gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  gem 'capistrano-passenger', '~> 0.2.0'
+
 end
 
 group :test do
@@ -81,7 +83,8 @@ end
 
 group :production do
   # Use Redis adapter to run Action Cable in production
-
+  gem 'passenger'
+  gem 'passenger-rails'
 end
 gem 'redis', '~> 4.0'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -92,3 +95,5 @@ gem 'mqtt'
 
 # Mongo ID auditing gem
 gem 'mongoid-history'
+
+gem 'sshkit-sudo'
