@@ -80,7 +80,7 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
-
+gem 'bundler'
 group :production do
   # Use Redis adapter to run Action Cable in production
   gem 'passenger'
